@@ -10,6 +10,19 @@
   --hover-button: #404bbf;
 }
 
+
+
+
+
+h1,h2.h3,h4,p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -19,6 +32,50 @@
 }
 
 /*+++++++HEADER+++++++*/
+.container {
+  background-color: aqua;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header-container{
+  display: flex;
+  align-items: center;
+}
+.page-nav{
+  display: flex;
+  align-items: center;
+  }
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  }
+
+.logo {
+  margin-right: 77px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right:40px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+
+.contact-item {
+margin-right: 40px;
+}
+
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -47,7 +104,7 @@
   letter-spacing: 0.02em;
 }
 
-.contact {
+.contact-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -55,10 +112,12 @@
   color: var(--contact-description-color);
 }
 
-.contact:hover,
-.contact:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--logo-button-color);
 }
+
+
 /*+++++++/HEADER+++++++*/
 
 /*+++++++++++BODY++++++++++*/
