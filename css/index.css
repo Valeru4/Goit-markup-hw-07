@@ -10,13 +10,20 @@
   --hover-button: #404bbf;
 }
 
-
-
-
-
-h1,h2.h3,h4,p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -32,9 +39,9 @@ img {
 }
 
 /*+++++++HEADER+++++++*/
-.container {
+/* .container {
   background-color: aqua;
-}
+} */
 
 .container {
   width: 1158px;
@@ -44,26 +51,26 @@ img {
   padding-right: 15px;
 }
 
-.page-header-container{
+.page-header-container {
   display: flex;
   align-items: center;
 }
-.page-nav{
+.page-nav {
   display: flex;
   align-items: center;
-  }
+}
 
 .menu-list {
   display: flex;
   flex-direction: row;
-  }
+}
 
 .logo {
   margin-right: 77px;
 }
 
 .menu-item:not(:last-child) {
-  margin-right:40px;
+  margin-right: 40px;
 }
 
 .contact-list {
@@ -71,11 +78,9 @@ img {
   margin-left: auto;
 }
 
-
 .contact-item {
-margin-right: 40px;
+  margin-right: 40px;
 }
-
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -85,6 +90,8 @@ margin-right: 40px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo span {
@@ -117,7 +124,6 @@ margin-right: 40px;
   color: var(--logo-button-color);
 }
 
-
 /*+++++++/HEADER+++++++*/
 
 /*+++++++++++BODY++++++++++*/
@@ -130,6 +136,7 @@ body {
 /*++++++++++HERO+++++++*/
 
 .hero {
+  text-align: center;
   background-color: var(--second-color);
 }
 
@@ -140,6 +147,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  padding-top: 192px;
+  margin-bottom: 48px;
 }
 
 .modal-button {
@@ -149,11 +158,15 @@ body {
   line-height: 1.19;
   color: var(--white-color);
   background-color: var(--logo-button-color);
-
   cursor: pointer;
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 192px;
 }
 
 .modal-button:hover,
@@ -165,12 +178,34 @@ body {
 
 /*++++++++ADVANTAGES++++++++*/
 .advantage-title {
-  visibility: hidden;
+ position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;;
+}
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages-items:not(:last-child) {
+  margin-right: 24px;
+}
+
+.advantage-section{
+  padding-top: 120px;
 }
 /*++++++++/ADVANTAGES++++++++*/
 
 /*++++++++++COMPONENTS++++++++++*/
 .suptitle {
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -179,12 +214,14 @@ body {
 }
 
 .section-title {
+  text-align: center;
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-color);
+  margin-bottom: 72px;
 }
 
 .description-section {
@@ -193,14 +230,56 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contact-description-color);
+  margin-top: 8px;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*++++++++++/COMPONENTS++++++++++*/
+
+/*++++++++++ABOUT+++++++*/
+.activity-list {
+  display: flex;
+  flex-direction: row;
+  width: calc(100-48)/3;
+}
+
+.activity-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*++++++++++/ABOUT+++++++*/
 
 /*++++++++++TEAM++++++++++++*/
 
 .team-section {
   background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  width: calc(100-48)/4;
+}
+
+.team-item {
+  margin-right: 24px;
+  text-align: center;
+}
+
+.team-title {
+  margin-top: 32px;
+}
+
+
+.team-title-description{
+  padding-top: 32px;
+  padding-bottom: 32px;
+ background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 /*++++++++++/TEAM++++++++++++*/
 
@@ -211,7 +290,8 @@ body {
 }
 
 .footer-about {
-  color: var(--footer-color);
+   color: var(--footer-color);
+
 }
 
 .logo-footer {
@@ -227,5 +307,12 @@ body {
 .logo-footer span {
   color: var(--logo-button-color);
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+ }
 
 /*++++++++/FOOTER+++++++*/
