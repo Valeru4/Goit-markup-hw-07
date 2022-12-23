@@ -11,157 +11,220 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- HEADER -->
 
-       <!-- HEADER -->
-
-    <header>
-      <nav>
-        <a class="link logo" href="./index.html" title="Web Studio"
-          ><span>Web</span>Studio</a
-        >
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="./index.html">Studio</a>
+    <header class="page-header">
+      <div class="page-header-container container">
+        <nav class="page-nav">
+          <a class="link logo" href="./index.html" title="Web Studio"
+            ><span>Web</span>Studio</a
+          >
+          <ul class="menu-list list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list list">
+          <li>
+            <a class="contact-item link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#">Contacts</a>
+          <li>
+            <a class="contact-item link" href="tel:+11(000)111-11-11"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="contact link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact link" href="tel:+11(000)111-11-11"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
+
     <!-- Filter -->
+
+
     <main>
       <section>
-        <h1 class="filter-title">Service List</h1>
-        <ul class="list">
-          <li><button class="modal-button" type="button">All</button></li>
-          <li><button class="modal-button" type="button">Web Site</button></li>
-          <li><button class="modal-button" type="button">App</button></li>
-          <li><button class="modal-button" type="button">Design</button></li>
-          <li><button class="modal-button" type="button">Marketing</button></li>
-        </ul>
+        <div class="container">
+          <ul class="list filter-list">
+            <li class="filter-item">
+              <button class="modal-button" type="button">All</button>
+            </li>
+            <li class="filter-item">
+              <button class="modal-button" type="button">Web Site</button>
+            </li>
+            <li class="filter-item">
+              <button class="modal-button" type="button">App</button>
+            </li>
+            <li class="filter-item">
+              <button class="modal-button" type="button">Design</button>
+            </li>
+            <li class="filter-item">
+              <button class="modal-button" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
 
-        <!-- List of project cards -->
 
-        <h2 class="card-title">Project cards</h2>
-        <ul class="list">
-          <li>
-            <a class="link" href="#"><img
-              src="./images/BankingApp.jpg"
-              alt="Banking App Interface Concept"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Banking App Interface Concept</h3>
-            <p class="card-description">App</p> </a>
-          </li>
-          <li>
-           <a class="link" href="#"> <img
-              src="./images/CashlessPayment.jpg"
-              alt="Cashless Payment"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Cashless Payment</h3>
-            <p class="card-description">Marketing</p></a>
-          </li>
-          <li>
-            <a class="link" href="#"><img src="./images/MeditationApp.jpg" alt="Meditaion App" />
-            <h3 class="card-item">Meditaion App</h3>
-            <p class="card-description">App</p></a>
-          </li>
-          <li>
-           <a class="link" href="#"> <img
-              src="./images/TaxiService.jpg"
-              alt="Taxi Service"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Taxi Service</h3>
-            <p class="card-description">Marketing</p></a>
-          </li>
-          <li>
-           <a class="link" href="#"><img
-              src="./images/ScreenIllustrations.jpg"
-              alt="Screen Illustrations"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Screen Illustrations</h3>
-            <p class="card-description">Design</p></a>
-          </li>
-          <li>
-           <a class="link" href="#"> <img
-              src="./images/OnlineCourses.jpg"
-              alt="Online Courses"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Online Courses</h3>
-            <p class="card-description">Marketing</p></a>
-          </li>
-          <li>
-           <a class="link" href="#"><img
-              src="./images/InstagramStories.jpg"
-              alt="Instagram Stories Concept"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Instagram Stories Concept</h3>
-            <p class="card-description">Design</p></a> 
-          </li>
-          <li>
-           <a class="link" href="#"> <img
-              src="./images/OrganicFood.jpg"
-              alt="Organic Food"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Organic Food</h3>
-            <p class="card-description">Web Site</p></a>
-          </li>
-          <li>
-           <a class="link" href="#"><img
-              src="./images/FreshCoffee.jpg"
-              alt="Fresh Coffee"
-              width="360"
-              height="300"
-            />
-            <h3 class="card-item">Fresh Coffee</h3>
-          <p class="card-description">Web Site</p></a> 
-          </li>
-        </ul>
+<!-- List of project cards -->
+
+
+        <h1 class="section-card-title">Project cards</h1>
+
+       <div class="container card-container">
+          <ul class="list card-list">
+            <li class="card-item">
+              <a class="link" href="#"
+                ><img
+                  src="./images/BankingApp.jpg"
+                  alt="Banking App Interface Concept"
+                  width="360"
+                  height="300"
+                />
+               <div class="card-item-name">
+                  <h2 class="card-title">Banking App Interface Concept</h2>
+                  <p class="card-description">App</p>
+               </div>
+              </a>
+            </li>
+            <li class="card-item">
+              <a class="link" href="#">
+                <img
+                  src="./images/CashlessPayment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+               <div class="card-item-name">
+                  <h2 class="card-title">Cashless Payment</h2>
+                  <p class="card-description">Marketing</p>
+               </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#"
+                ><img src="./images/MeditationApp.jpg" alt="Meditaion App" />
+                <div class="card-item-name ">
+                  <h2 class="card-title">Meditaion App</h2>
+                  <p class="card-description">App</p>
+                </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#">
+                <img
+                  src="./images/TaxiService.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-item-name">
+                  <h2 class="card-title">Taxi Service</h2>
+                  <p class="card-description">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#"
+                ><img
+                  src="./images/ScreenIllustrations.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-item-name">
+                  <h2 class="card-title">Screen Illustrations</h2>
+                  <p class="card-description">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#">
+                <img
+                  src="./images/OnlineCourses.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+               <div class="card-item-name">
+                  <h2 class="card-title">Online Courses</h2>
+                  <p class="card-description">Marketing</p>
+               </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#"
+                ><img
+                  src="./images/InstagramStories.jpg"
+                  alt="Instagram Stories Concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-item-name">
+                  <h2 class="card-title">Instagram Stories Concept</h2>
+                  <p class="card-description">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#">
+                <img
+                  src="./images/OrganicFood.jpg"
+                  alt="Organic Food"
+                  width="360"
+                  height="300"
+                />
+              <div class="card-item-name">
+                  <h2 class="card-title">Organic Food</h2>
+                  <p class="card-description">Web Site</p>
+              </div></a
+              >
+            </li>
+            <li class="card-item">
+              <a class="link" href="#"
+                ><img
+                  src="./images/FreshCoffee.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-item-name">
+                  <h2 class="card-title">Fresh Coffee</h2>
+                  <p class="card-description">Web Site</p>
+                </div> </a
+              >
+            </li>
+          </ul>
+       </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer class="footer">
-       <a class="link logo-footer" href="./index.html" title="Web Studio"
-          ><span>Web</span> Studio</a>
-      <p  class="description-section footer-about" >
-        Increase the flow of customers and sales for your business with digital
+     <footer class="footer">
+      <div class="footer-container container">
+      <a class="link logo-footer" href="./index.html" title="Web Studio"
+        ><span>Web</span> Studio</a
+      >
+      <p class="description-section footer-about">
+        Increase the flow of customers and <br/> sales for your business with digital <br/>
         marketing and growth solutions.
       </p>
+      </div>
     </footer>
   </body>
 </html>
