@@ -181,8 +181,6 @@ body {
 
 /*+++++++++LIST oF PROJECT CARDS+++++++++*/
 
-
-
 .card-container {
   margin-top: 72px;
   margin-bottom: 120px;
@@ -191,25 +189,23 @@ body {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-    }
-
-.card-item {
-     margin-bottom: 48px;
-    margin-right: 24px;
-  
 }
 
-.card-item:nth-child(3n+3) {
-  margin-right: 0;
+.card-item {
+  margin-bottom: 48px;
+  margin-right: 24px;
+}
 
+.card-item:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .card-item-name {
-padding-top: 32px;
+  padding-top: 32px;
   padding-bottom: 32px;
-background: var(--white-color);
-border: 0.5px solid #F4F4FD;
-}  
+  background: var(--white-color);
+  border: 0.5px solid #f4f4fd;
+}
 
 .card-title {
   padding-left: 16px;
@@ -217,20 +213,17 @@ border: 0.5px solid #F4F4FD;
 }
 
 .section-card-title {
-   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-
-
-
 
 .card-description {
   font-style: normal;
@@ -240,7 +233,7 @@ border: 0.5px solid #F4F4FD;
   letter-spacing: 0.02em;
   color: var(--color-primary);
   padding-left: 16px;
-  }
+}
 
 .card-title {
   font-style: normal;
@@ -251,10 +244,8 @@ border: 0.5px solid #F4F4FD;
   color: var(--second-color);
 }
 
-
-
 .card-list {
-  width: calc(100-48)/3;
+  width: calc(100-48) / 3;
 }
 
 /*+++++++++/LIST oF PROJECT CARDS+++++++++*/
@@ -266,8 +257,7 @@ border: 0.5px solid #F4F4FD;
 }
 
 .footer-about {
-   color: var(--footer-color);
-
+  color: var(--footer-color);
 }
 
 .logo-footer {
@@ -289,6 +279,6 @@ border: 0.5px solid #F4F4FD;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
- }
+}
 
 /*++++++++/FOOTER+++++++*/
