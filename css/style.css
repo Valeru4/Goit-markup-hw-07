@@ -97,7 +97,6 @@ img {
 .contact-item:focus {
   color: var(--logo-button-color);
 }
-
 .menu-link {
   font-weight: 600;
   font-size: 16px;
@@ -118,8 +117,8 @@ img {
   padding-bottom: 24px;
 }
 
-.contact:hover,
-.contact:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--logo-button-color);
 }
 
