@@ -107,6 +107,11 @@ img {
   padding-bottom: 24px;
 }
 
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--logo-button-color);
+}
+
 .contact-item {
   font-weight: 400;
   font-size: 16px;
@@ -117,10 +122,7 @@ img {
   padding-bottom: 24px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--logo-button-color);
-}
+
 
 .page-header {
   background: #ffffff;
