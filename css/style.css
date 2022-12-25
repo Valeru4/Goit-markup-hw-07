@@ -93,8 +93,8 @@ img {
   color: var(--logo-button-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--logo-button-color);
 }
 
@@ -287,4 +287,4 @@ padding-bottom: 120px;
   color: var(--logo-button-color);
 }
 
-+++++/FOOTER+++++++*/
+/* +++++/FOOTER+++++++* */
