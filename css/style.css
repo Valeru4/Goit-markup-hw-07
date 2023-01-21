@@ -136,8 +136,10 @@ img {
 }
 
 .current {
+  color: var(--logo-button-color);
   position: relative;
 }
+
 
 .current::after {
   content: "";
@@ -404,7 +406,7 @@ body {
 }
 
 .subscribe-footer-wrapper {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-footer-title {
@@ -430,6 +432,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-footer-btn:hover,
@@ -449,15 +452,15 @@ body {
   color: white;
   background-color: transparent;
   box-shadow: none;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-footer-form {
   display: flex;
-  flex-direction: row;
   margin-top: 16px;
 }
 
