@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 426px;
+        margin-left: auto;
+  margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+}
+
+
+.menu-list {
+    display: none;
+}
+.contact-list {
+    display: none;
+}
+
+.mobile-menu-icon  {
+    fill:black;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-btn {
+    width: 32px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    
+}
