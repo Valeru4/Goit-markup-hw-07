@@ -74,6 +74,31 @@ body {
         width: 1158px;
     }
 }
+/* +++++++++++++++++LOGO++++++++++++++++++ */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    }
+  
+  .logo span {
+    color: var(--logo-button-color);
+  }
+
+/* +++++++++++++++++/LOGO++++++++++++++++++ */
+
+
+.page-header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* ++++++++MOBILE PHONE-HEADER++++++++ */
 
 @media screen and (max-width: 767px) {
     .menu-list {
@@ -82,13 +107,15 @@ body {
     .contact-list {
         display: none;
     }
+.page-nav {
+    display: none;
+}
     
 .page-header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 
@@ -218,6 +245,9 @@ color: var(--contact-description-color);
 
 }
 
+/* ++++++++MOBILE PHONE-HEADER++++++++ */
+
+/* +++++++++++TABLET-HEADER+++++++++ */
 
 @media screen and (min-width: 768px) {
     .mobile-menu-container-wrapper {
@@ -228,4 +258,164 @@ color: var(--contact-description-color);
     }
 }
 
+.menu-list {
+    display: flex;
+    align-items: center;
+   }
 
+ .menu-item:not(:last-child) {
+     margin-right: 40px;
+ }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+
+    .page-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+                  }
+
+       .page-nav {
+        display: flex;
+       }
+
+     .contact-mail {
+        margin-bottom: 4px;
+     }
+    
+    }
+
+/* +++++++++++/TABLET-HEADER+++++++++ */
+
+
+/* +++++++++++DESKTOP-HEADER+++++++++ */
+
+@media screen and (min-width: 1200px) {
+  
+   .page-header-container  {
+    display: flex;
+    }
+
+   .logo {
+    margin-right: 76px;
+   }
+
+
+ .page-nav {
+   margin-right: 332px ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+    .contact-list {
+        display: flex;
+        align-items: center;
+                }
+    
+    .contact-item:not(:last-child) {
+            margin-right: 40px;
+        }
+      
+}
+
+/* +++++++++++/DESKTOP-HEADER+++++++++ */
+
+
+/* +++++++HERO+++++ */
+
+.hero {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/adaptive/hero-mobile-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  height: 432px;
+  text-align: center;
+padding-top: 112px;
+padding-bottom: 112px;
+}
+
+
+.modal-button {
+    margin-top: 72px;
+}
+
+.hero-title {
+    font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--white-color);
+}
+
+
+/* +++++++/HERO+++++ */
+
+
+/* +++++++HERO-TABLET+++++  */
+
+@media screen and (min-width: 768px) {
+    
+    .hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ), url('../images/adaptive/hero-tablet-1.jpg');
+          height: 436px;
+          padding-top: 112px;
+          padding-bottom: 108px;
+    }
+    .modal-button {
+        margin-top: 40px;
+    }
+    .hero-title {
+        font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    }
+    }
+
+    /* +++++++/HERO-TABLET+++++   */
+
+
+
+    /* +++++++HERO-DESKTOP+++++  */
+
+
+@media  screen and (min-width: 1200px) {
+        .hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ), url('../images/adaptive/hero-desktop-1.jpg');
+        height: 600px;
+        padding-top: 188px;
+          padding-bottom: 188px;
+        }
+
+        .modal-button {
+            margin-top: 78px;
+        }
+            }
+            
+/* +++++++/HERO-DESKTOP+++++  */
