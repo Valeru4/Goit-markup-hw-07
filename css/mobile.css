@@ -159,8 +159,6 @@ body {
 }
 
     .mobile-menu-open-btn {
-        width: 32px;
-        height: 22px;
         border: none;
         background-color: transparent;    
     }
@@ -174,7 +172,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        max-height: 796px;
+        height: 100vh;
         background-color: var(--white-color);
         opacity: 0;
         visibility: hidden;
@@ -190,6 +188,7 @@ body {
     .mobile-menu-container {
         position: relative;
         width: 100%;
+        height: 100vh;
         padding-left: 40px;
         padding-right: 60px;
         padding-bottom: 40px;
@@ -244,7 +243,6 @@ body {
 
     .mobile-menu-tel {
         font-family: 'Roboto';
-        font-style: normal;
         font-weight: 600;
         font-size: 36px;
         line-height: 1.11;
@@ -255,7 +253,6 @@ body {
     }
 
     .mobile-menu-mail {
-        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -311,7 +308,6 @@ body {
 
     .menu-link {
         font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -395,7 +391,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 432px;
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -454,7 +449,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 
 .hero-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -464,7 +458,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .modal-button {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -500,7 +493,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 
     .hero-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -542,7 +534,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .advantage-suptitle {
-    font-style: normal;
     letter-spacing: 0.02em;
     color: var(--second-color);
     margin-bottom: 8px;
@@ -550,7 +541,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .advantage-description {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -644,7 +634,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .section-title {
     text-align: center;
     margin-bottom: 72px;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -770,7 +759,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .clients-item {
     width: calc((100% - 16px) / 2);
-    
+    height: 88px;
 }
 
 
@@ -778,6 +767,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     fill: var(--modal-form-label);
     border: 1px solid var(--modal-form-label);
     border-radius: 4px;
@@ -850,7 +841,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .logo-footer {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -874,7 +864,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .footer-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -884,7 +873,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .footer-media-text,
 .subscribe-footer-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -917,8 +905,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .social-media-icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 }
 
 .subscribe-footer-input {
@@ -929,11 +917,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         border-radius: 4px;
         background-color: transparent;
         color: var(--white-color);
+        padding-left: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-footer-input::placeholder {
-        font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 2;
@@ -966,8 +954,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .footer-wrapper-logo {
         align-items: center;
         justify-content: center;
-        padding-left: 65px;
-        padding-right: 65px;
+        width: 268px;
+        /* padding-left: 65px;
+        padding-right: 65px; */
         margin-bottom: 72px;
     }
 
@@ -1060,9 +1049,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .modal {
-    top: 60%;
+    top: 50%;
     left: 50%;
-    width: 92%;
+    width: 392px;
     padding: 72px 16px 24px;
     max-width: 392px;
     min-height: 586px;
