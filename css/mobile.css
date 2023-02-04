@@ -600,7 +600,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .advantage-section{
         padding-top: 96px;
         padding-bottom: 96px;
-        text-transform: capitalize;
     }
 
     .advantage-suptitle {
